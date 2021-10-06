@@ -7,8 +7,11 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror -std=c++17")
-set(test_dir "${PROJECT_SOURCE_DIR}/test")
 
+#~ set(src_dir "${PROJECT_SOURCE_DIR}/src")
+#~ file (GLOB test_files "${src_dir}/*.cpp")
+
+set(test_dir "${PROJECT_SOURCE_DIR}/test")
 file (GLOB test_files "${test_dir}/*_test.cpp")
 # Locate GTest
 find_package(GTest REQUIRED)
